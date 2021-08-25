@@ -15,33 +15,26 @@
 
 <body>
 
-<!-- NAVBAR -->
+    <!-- NAVBAR -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light p-4">
+        <nav class="navbar navbar-expand-lg navbar-light position-fixed w-100">
+            <h1><a class="navbar-brand text-dark fw-bolder" href="index.html">BOUTIQUE SCENARIO</a></h1>
             <button class="navbar-toggler" 
             type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#navbarNav" 
-            aria-controls="navbarNav" 
-            aria-expanded="false" 
+            data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
             aria-label="Toggle navigation">
-                <span>MENU</span>
+            <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="clothes.html">Vêtements</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="items.html">Accessoires</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="infos.html">Infos</a>
-                    </li>
-                </ul>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                <a class="nav-link fw-bolder text-dark" href="index.html">Accueil</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link fw-bolder text-dark" href="infos.html">Contact</a>
+                </li>
+            </ul>
             </div>
         </nav>
     </header>
@@ -51,7 +44,6 @@
         <!-- BANNIERE -->
 
         <section class="titre">
-            <img class="fond" src="/images/fond3.webp">
             <h1>
                 Boutique Scénario
             </h1>
@@ -62,35 +54,39 @@
         <span class="Intro">
             Nous trouver => 6 Rue Emile Jamais 30220 Aigues Mortes<br>
             Nous Contacter => 04.66.53.93.46<br>
-            Nos Horraires =>
+            Nos Horaires =>
         </span>
 
 
 
     </main>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-</body>
-<!-- <footer>
-    
-        <img class="relance" src="images/etiquette-FR-kit-com.png">
-        <div class="formality">
-            <p class="copyright">
-                <img src="images/copyright_25.png" alt="copyright">
-            2021 Aigues Bike. Tous droits réservés
-            </p>
-            <div class="director">
-                <img src="images/mermaidSmall.png" class="mermaid" alt="logo de la sirene d'aurore Creation Web"/>
-                <a href="https://aurorecreationweb.fr/%22%3EAurore Creation Web </a>
+    <footer>
+        <div class="footer w-100 d-flex justify-content-center align-items-center">
+            <img class=" h-auto pt-3 pb-3" src="images/etiquette-FR-kit-com.png"
+                alt="site financé par le plan relance du gouvernement">
+            <div class="formality">
+                <p class="copyright text-white text-center m-auto">
+                    © 2021 Boutique SCENARIO. Tous droits réservés
+                </p>
+                <div class="d-flex align-items-center  pt-2 flex-column">
+                    <img src="images/mermaidSmall.png" class="mermaid ms-2 h-auto"
+                        alt="logo de la sirene d'aurore Creation Web" />
+                    <a class="text-decoration-none" href="https://aurorecreationweb.fr"> Aurore Creation Web </a>
+                </div>
             </div>
         </div>
-   
-</footer> -->
+    </footer>
 
+    <script src="js/shop.js"></script>
+    <script src="js/index.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js">
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</body>
 
 </html>
