@@ -1,5 +1,15 @@
 $color__main--turquoise: rgb(33, 200, 206);
+$color__main--green: #47ad8d;
+$color__main--blue: #336a9f;
 $color__main--grey: rgb(235, 229, 229);
+
+@mixin color{
+    font-family: "Cookie-Regular" !important;
+    background-image: linear-gradient($color__main--green,$color__main--blue);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
 html{
     box-sizing: border-box;
     font-size: 1.4rem;
@@ -32,51 +42,13 @@ html{
 
 .title {
     padding-top: 6.5rem!important;
-    font-size: 2.5rem !important;
-    text-align: center;
-    color: $color__main--turquoise!important;
-    text-shadow: 6px 5px 5px #000;
-}
-  
-  /* TITRE PAGES */
-  
-h2 {
-    font-family: "Cookie-Regular" !important;
-    width: 100%;
-    text-align: center;
-    margin-top: 2rem !important;
     font-size: 3rem !important;
-    background-image: linear-gradient(#9256dca9, #0fc7ae9d);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
+    text-align: center;
+    @include color;
+}
   
-
-  /* CAROUSEL 1 ERE PAGE */
-.carousel{
-  overflow: hidden;
-  height: 13rem;
-}
-
-.size_parent{
-    text-align:center;
-}
-
-.size_img{
-    width: 80%!important;
-    height: auto;
-}
-
-.carousel-control-next, .carousel-control-prev {
-    color: #000!important;
-    opacity: 1!important;
-    width:10%!important;
-}
-
-  /* SECTION TEXTE */
-  .text {
+.text {
     width: 80% !important;
-    text-align: justify;
     margin-top: 2rem;
     font-family: "Cookie-Regular" !important;
     & p::first-letter{
@@ -84,7 +56,7 @@ h2 {
     }
 } 
 
-//bas de page//
+//bas de page
 .footer{
     background-image: url("images/background.jpg");
     background-repeat: no-repeat;
@@ -96,16 +68,26 @@ h2 {
         margin-bottom:-5px;
     }
     & a{
-        color: rgb(243, 127, 243)!important; 
         &:hover{
-            color: #d9dee2!important;
+            color: #6b74ee!important;
         }
     }
 }
 
+// page contact
+  h2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem !important;
+    font-size: 3rem !important;
+    @include color;
+}
+.color{
+    color: #45769b;
+}
 
   /* RESPONSIVE */
-  @media all and (max-width: 450px){
+@media all and (max-width: 450px){
     .footer{
         flex-direction: column;
         text-align: center;
@@ -119,13 +101,6 @@ h2 {
 }
 
 @media screen and (min-width: 650px) {
-    .text,
-    .size_img{
-        width: 60%!important;
-    }
-    .carousel{
-      height: 14.5rem!important;
-    }
     .footer{
         flex-direction: row;
         & .copyright{
@@ -134,18 +109,3 @@ h2 {
         }
       }
   }
-
-@media screen and (min-width: 1000px) {
-    .carousel{
-      height: 19rem!important;
-    }
-}
-@media screen and (min-width: 1400px) {
-    .text,
-    .size_img{
-      max-width: 50%!important;
-    }
-    .carousel{
-      height: 22rem!important;
-    }
-}
