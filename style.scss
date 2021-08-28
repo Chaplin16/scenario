@@ -11,7 +11,7 @@ $color__main--grey: rgb(235, 229, 229);
 }
 
 html{
-    box-sizing: border-box;
+    box-sizing: border-box!important;
     font-size: 1.4rem;
 }
 
@@ -23,7 +23,8 @@ html{
     background-size: cover;
     background-attachment:fixed;
     z-index:5;
-    padding : 1.4rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
     & .navbar-toggler{
         border-color: #fff;
         &:focus{
@@ -36,7 +37,7 @@ html{
     }
     & .navbar-collapse{
         max-height: 3.5rem!important;
-        line-height: 1.2rem;
+        line-height: 0.7rem;
     }
 }
 
@@ -69,27 +70,41 @@ html{
     }
     & a{
         &:hover{
-            color: #6b74ee!important;
+            color: #FFF!important;
         }
     }
 }
 
 // page contact
-  h2 {
-    width: 100%;
-    text-align: center;
-    margin-top: 2rem !important;
-    font-size: 3rem !important;
-    @include color;
-}
 .color{
     color: #45769b;
 }
 
   /* RESPONSIVE */
+@media all and (max-width: 350px){
+    .navbar{
+        padding-left: 0.3rem!important;
+        padding-right: 0.5rem!important;
+        & .navbar-toggler{
+        padding:3px;
+        }
+    }
+
+} 
 @media all and (max-width: 450px){
+    .navbar{
+        padding-left: 0.5rem;
+        padding-right: 0.7rem;
+        & .navbar-brand{
+        font-size: 1rem!important;
+        }
+    }
+    .text {
+        width: 90%!important;
+        text-align:justify!important;
+    }
+
     .footer{
-        flex-direction: column;
         text-align: center;
         & .relance{
             margin: auto;
