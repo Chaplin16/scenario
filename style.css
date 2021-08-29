@@ -1,5 +1,6 @@
 html {
-  box-sizing: border-box !important;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
   font-size: 1.4rem;
 }
 
@@ -14,18 +15,28 @@ html {
   padding-left: 1.4rem;
   padding-right: 1.4rem;
 }
+
 .navbar .navbar-toggler {
   border-color: #fff;
 }
+
 .navbar .navbar-toggler:focus {
-  box-shadow: 0 0 0;
+  -webkit-box-shadow: 0 0 0;
+          box-shadow: 0 0 0;
 }
-.navbar .navbar-brand:hover, .navbar .nav-link:hover {
+
+.navbar .navbar-brand:hover,
+.navbar .nav-link:hover {
   color: #000 !important;
 }
+
 .navbar .navbar-collapse {
   max-height: 3.5rem !important;
   line-height: 0.7rem;
+}
+
+.row > * {
+  width: 95% !important;
 }
 
 .title {
@@ -33,6 +44,7 @@ html {
   font-size: 3rem !important;
   text-align: center;
   font-family: "Cookie-Regular" !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#47ad8d), to(#336a9f));
   background-image: linear-gradient(#47ad8d, #336a9f);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -43,6 +55,7 @@ html {
   margin-top: 2rem;
   font-family: "Cookie-Regular" !important;
 }
+
 .text p::first-letter {
   padding-left: 3rem;
 }
@@ -51,13 +64,19 @@ html {
   background-image: url("images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  column-gap: 1rem;
-  flex-direction: column;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .footer .mermaid {
   width: 4rem;
   margin-bottom: -5px;
 }
+
 .footer a:hover {
   color: #FFF !important;
 }
@@ -76,6 +95,7 @@ html {
     padding: 3px;
   }
 }
+
 @media all and (max-width: 450px) {
   .navbar {
     padding-left: 0.5rem;
@@ -84,12 +104,10 @@ html {
   .navbar .navbar-brand {
     font-size: 1rem !important;
   }
-
   .text {
     width: 90% !important;
     text-align: justify !important;
   }
-
   .footer {
     text-align: center;
   }
@@ -100,14 +118,17 @@ html {
     font-size: 1rem;
   }
 }
+
 @media screen and (min-width: 650px) {
   .footer {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .footer .copyright {
     max-width: 60%;
     font-size: 0.9rem;
   }
 }
-
 /*# sourceMappingURL=style.css.map */

@@ -42,4 +42,4 @@ function carousel(selector, data) {
                       
 }
 
-carousel(".thirdCarousel", shop)
+carousel(".firstCarousel", shop)

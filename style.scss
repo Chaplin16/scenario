@@ -40,7 +40,9 @@ html{
         line-height: 0.7rem;
     }
 }
-
+.row>*{
+    width: 95%!important;
+}
 .title {
     padding-top: 6.5rem!important;
     font-size: 3rem !important;
