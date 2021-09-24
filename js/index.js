@@ -13,6 +13,9 @@ function carousel(selector, data) {
         speed: 5,
         slidesToShow: 4,
         slidesToScroll: 4,
+        autoplaySpeed:1200,
+        autoplay: true,
+        speed:1000,
         responsive: [
           {
             breakpoint: 1024,

@@ -40,9 +40,11 @@ html{
         line-height: 0.7rem;
     }
 }
+
 .row>*{
     width: 95%!important;
 }
+
 .title {
     padding-top: 6.5rem!important;
     font-size: 3rem !important;
@@ -82,6 +84,10 @@ html{
     color: #45769b;
 }
 
+//page law.html
+.return:hover{
+    color:$color__main--green;
+}
   /* RESPONSIVE */
 @media all and (max-width: 350px){
     .navbar{
