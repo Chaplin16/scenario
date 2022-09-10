@@ -2,22 +2,57 @@
 const shop = [
     {
         id:1,
-        attachment:"images/boutique_exterieure.jpg",
-        alt:"photo de la boutique Scénario vue de l 'extérieur"
+        attachment:"images/banner/boutique-scenario-aigues-devanture.mortes.jpg",
+        alt:"boutique scenario des vetements pour la femme a aigues mortes"
     },
     {
         id:2,
-        attachment:"images/tee-shirt_interieur_boutique.jpg",
-        alt:"photo des tee-shirts et tuniques dans la boutique'"
+        attachment:"images/banner/boutique-scenario-aigues-mortes.jpg",
+        alt:""
     },
     {
         id:3,
-        attachment:"images/robe_exterieur_boutique.jpg",
-        alt:"photo des étalages de vêtements"
+        attachment:"images/banner/boutique-scenario-chemise-aigues-mortes-habits-femme.jpg",
+        alt:""
     },
     {
         id:4,
-        attachment:"images/createur_interieur_boutique.jpg",
-        alt:"photo de la partie createur, vêtement et bijoux"
+        attachment:"images/banner/boutique-scenario-chemises-femme.jpg",
+        alt:""
+    },
+    {
+        id:5,
+        attachment:"images/banner/boutique-scenario-creatrice-aigues-mortes.jpg",
+        alt:""
+    },
+    {
+        id:6,
+        attachment:"images/banner/boutique-scenario-femme-aigues-mortes.jpg",
+        alt:""
+    },
+    {
+        id:7,
+        attachment:"images/banner/boutique-scenario-femme-robe.aigues-mortes.jpg",
+        alt:""
+    },
+    {
+        id:8,
+        attachment:"images/banner/boutique-scenario-hauts-femme.aigues-mortes.jpg",
+        alt:""
+    },
+    {
+        id:9,
+        attachment:"images/banner/boutique-scenario-jeans.aigues-mortes.jpg",
+        alt:""
+    },
+    {
+        id:10,
+        attachment:"images/banner/boutique-scenario-partie-fillette.aigues-mortes.jpg",
+        alt:""
+    },
+    {
+        id:11,
+        attachment:"images/banner/boutique-scenario-tenues-feminines.aigues-mortes.jpg",
+        alt:""
     }
 ]
